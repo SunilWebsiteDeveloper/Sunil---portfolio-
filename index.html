@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunil | Front-End Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Sunil | Web Developer</div>
+    <nav id="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section id="home" class="hero" data-aos="fade-up">
+    <h1>नमस्ते, मैं Sunil हूँ</h1>
+    <p>मैं एक फ्रंटएंड वेब डेवलपर हूँ जो responsive websites बनाता हूँ।</p>
+    <a href="#projects" class="btn">मेरा काम देखें</a>
+  </section>
+
+  <section id="about" class="about" data-aos="fade-up">
+    <img src="https://via.placeholder.com/150" alt="Sunil Photo" />
+    <div>
+      <h2>मेरे बारे में</h2>
+      <p>5+ साल का अनुभव Web Design, WordPress, Shopify, SEO, Responsive Design, और Front-End Development में।</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>✔ HTML</li>
+      <li>✔ CSS</li>
+      <li>✔ Web Design</li>
+      <li>✔ WordPress</li>
+      <li>✔ Shopify</li>
+      <li>✔ Responsive Design</li>
+      <li>✔ SEO</li>
+      <li>✔ Graphic Design</li>
+      <li>✔ Banner Design</li>
+      <li>✔ Front-End Development</li>
+      <li>✔ Landing Pages</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300x200" alt="Project 1" />
+      <h3>Portfolio Website</h3>
+      <p>Personal portfolio showcasing all my services and skills.</p>
+      <a href="https://demo-portfolio.vercel.app" target="_blank">Live Demo</a> |
+      <a href="https://github.com/demo-user/portfolio" target="_blank">View Code</a>
+    </div>
+  </section>
+
+  <section id="blog" class="blog" data-aos="fade-up">
+    <h2>Blog</h2>
+    <div class="blog-card">
+      <h3>Why Responsive Design Matters</h3>
+      <p>Responsive websites work smoothly across all devices...</p>
+      <a href="#">Read More</a>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials" data-aos="fade-up">
+    <h2>Client Reviews</h2>
+    <div class="testimonial">
+      <p>"Sunil did an amazing job redesigning our site!"</p>
+      <h4>- Rahul Mehta, CEO at WebKart</h4>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>संपर्क करें</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="आपका नाम" required />
+      <input type="email" name="email" placeholder="आपका ईमेल" required />
+      <textarea name="message" placeholder="अपना संदेश लिखें..." required></textarea>
+      <button type="submit">भेजें</button>
+    </form>
+    <div class="social">
+      <a href="https://linkedin.com/in/demo-user" target="_blank">LinkedIn</a>
+      <a href="https://github.com/demo-user" target="_blank">GitHub</a>
+      <a href="https://twitter.com/demo-user" target="_blank">Twitter</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sunil. सभी अधिकार सुरक्षित।</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
